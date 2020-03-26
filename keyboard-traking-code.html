@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+</head>
+
+<body>
+<input id="a" type="text"/>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script> 		
+<script>
+document.getElementById('a').addEventListener('keypress',function(e){
+     if (isEnglish(e.charCode))
+	    alert ('English keyboard');
+     else
+	alert ('English')
+});
+
+function isEnglish(charCode){
+   return (charCode >= 97 && charCode <= 122) 
+          || (charCode>=65 && charCode<=90);
+}
+	
+</script>		
+	
+	
+	
+</body>
+</html>
